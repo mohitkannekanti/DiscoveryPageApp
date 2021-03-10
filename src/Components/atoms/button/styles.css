@@ -1,0 +1,15 @@
+.primary {
+  color: blue;
+}
+.btn {
+  background-color: #2c84a7;
+  color: #fff;
+  border-style: none;
+  text-align: center;
+  padding: 10px;
+}
+.btn:hover {
+  color: #2c84a7;
+  background-color: #fff;
+  border: 1px solid #2c84a7;
+}
