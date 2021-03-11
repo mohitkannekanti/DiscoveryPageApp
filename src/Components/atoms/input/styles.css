@@ -3,10 +3,10 @@
   border: none;
   border-bottom: 1px solid #fff;
   background-color: transparent;
-  position: relative;
   outline: none;
 }
 .input:focus {
+  color: #fff;
   border: none;
   border-bottom: 1px solid #2c84a7;
 }
