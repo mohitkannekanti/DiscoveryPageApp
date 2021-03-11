@@ -8,7 +8,7 @@ import Logo from '../../molecules/Logo';
 const Header = () => {
 
     const headerList = {
-        navItemsList: ["Home", "Pages", "Discover", "Premium"],
+        navItemsList: ["Home", "Explore", "Shorts", "Mindblown", "Premium"],
         imgData: {
             location: ["hamburgerIcon.svg", "logo.png"],
             alt: ["menuImg", "logoImg"]

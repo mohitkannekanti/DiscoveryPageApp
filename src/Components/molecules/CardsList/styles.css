@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-outer {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.card-image {
+  display: block;
+  width: 100px;
+  height: auto;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-outer:hover .card-content {
+  opacity: 1;
+}

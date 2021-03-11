@@ -1,31 +1,23 @@
 import React from 'react'
 import Card from '../../atoms/Card'
+import './styles.css'
 
 const CardsList = () => {
     const cardDetail = {
-        location: ["adventure.jpg", "adventure.jpg", "adventure.jpg", "adventure.jpg", "adventure.jpg"],
-        cardText: ["Test 1", "Test 2", "Test 3", "Test 4", "Test 5"]
+        location: ['adventure.jpg', 'animals.jpg', 'auto.jpg', 'food.jpg', 'lifeStyle.jpg', 'nature.jpg'],
+        cardText: ['Adventure', 'Animals', 'Auto', 'Food', 'Life Style', 'Nature']
 
     }
 
-    console.log(cardDetail, "card details")
-
     return (
-        <>
-            {/* {cardDetail.map((cardContent, index) => {
+
+        <div className="cards">
+            {cardDetail.location.map((location, index) => {
                 return (
-                    { cardContent }
+                    <Card cardImage={location} key={index} cardContent={cardDetail.cardText[index]} imageWidth="200" cardImageClass="card-image" />
                 )
-            })} */}
-            {/* {cardImages && cardImages.map((cardImg, index) => {
-
-                // return (
-
-                //     <Card cardImage={cardImg} key={index} />
-                // )
-
-            })} */}
-        </>
+            })}
+        </div>
 
     )
 }
