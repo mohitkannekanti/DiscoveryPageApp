@@ -1,8 +1,23 @@
-.link {
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-link {
   text-decoration: none;
   color: white;
+  padding: 10px;
 }
 .link:hover {
   color: #f5f5f5;
   text-decoration: underline;
+}
+.link-active {
+  color: #fff;
+  font-weight: 600;
+}
+.link-normal {
+  font-weight: 300;
+  color: #f0f8ff;
 }

@@ -1,13 +1,8 @@
 import React from 'react';
-import logo from './logo.png';
-import navImage from './hamburgerIcon.svg';
 
-const Images = () => {
+const Images = ({ location, imageWidth, imageClass, alt, imgHeight }) => {
     return (
-        <>
-            <img src={navImage} alt="nav_icon" />
-            <img src={logo} alt="dummy_image" width="200px" />
-        </>
+        <img src={location} alt={alt} width={imageWidth} height={imgHeight} className={imageClass} />
     )
 }
 
